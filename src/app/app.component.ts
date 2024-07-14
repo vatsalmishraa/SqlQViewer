@@ -31,7 +31,7 @@ export class AppComponent {
   }
   parseInsertQuery(query:string){
     // Regular expression to match the INSERT INTO statement
-    const regex = /^INSERT INTO (\w+)\s*\(([^)]+)\) VALUES\s*\(([^)]+)\);?$/gim;
+    const regex = /^INSERT INTO (\w+)\s*\(([^)]+)\) VALUES\s*\(([^)]+)\);?$/im;
   
     // Extract table name, column names, and values from the query using regex
     const matches = query.match(regex);
